@@ -21,3 +21,5 @@
 // #define USE_I2C
 
 // #define MASTER_RIGHT
+#define RETRO_TAPPING
+#define TAPPING_TERM 1000
