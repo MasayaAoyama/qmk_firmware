@@ -14,6 +14,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include QMK_KEYBOARD_H
+#include"keymap_jp.h"
 
 enum custom_keycodes {
   RGBRST = SAFE_RANGE
@@ -51,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_RBRC,
       KC_NUHS,
 
-      KC_F13,
+      KC_TAB,
       KC_A,
       KC_S,
       KC_D,
@@ -85,9 +86,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_LALT,
       MO(1),
       KC_SPC,
-      LCTL(KC_Z),
-      MO(1),
-      KC_F13,
+      JP_MEISU, //LCTL(KC_Z),
+      JP_MKANA, //MO(1),
+      MO(1), //KC_F13,
       KC_LEFT,
       KC_DOWN,
       KC_RGHT
@@ -122,7 +123,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_NO,
       KC_NO,
       KC_NO,
-      KC_NO,
+
+      JP_ZKHK,
       RGB_MOD,
       RGB_HUD,
       RGB_SAD,
@@ -136,7 +138,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_NO,
       KC_NO,
 
-      KC_NO,
+      KC_F13,
       KC_NO,
       KC_NO,
       KC_NO,
